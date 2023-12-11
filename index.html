@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <style>
     .center {
         text-align: center;
@@ -8,43 +8,77 @@
 <head>
     <meta charset="utf-8" />
     <title>ikun</title>
+    
 </head>
 <body background="images/kuntai.jpg"
       style="background-repeat:no-repeat;
                background-attachment:fixed;
                background-size:100% 100%; ">
+    <div class="note">
+        <a href="http://lovety0712.github.io/">
+            <img src="images/ikun.jpg" width="60" height="60" margin-bottom="0" />
+            <p style="margin-top:0">返回寝室页</p>
+        </a>
+    </div>
     <h1 class="center" style=" font-family: 华文行楷;">坤流,永不消逝！</h1>
     <style>
         .image {
             display: flex;
             justify-content: space-around;
             margin: 80px;
-            margin-bottom:0;
-            height: 600px;
+            margin-bottom: 0;
+            height: 650px;
             width: 90%;
         }
-        .image img{
-            width:30%;
-        }
+
+            .image img {
+                width: 30%;
+            }
+
         .line {
             display: flex;
-            margin-left:80px;
-            margin-right:80px;
+            margin-left: 80px;
+            margin-right: 80px;
             justify-content: space-around;
             width: 90%;
         }
+
+        .note {
+            float: right;
+        }
     </style>
     <div class="image">
-        <img src="images/flower.jpg" />
-        <img src="images/flower.jpg" />
-        <img src="images/flower.jpg" />
-</div>
+        <img src="images/01.png" />
+        <img src="images/02.png" />
+        <img src="images/03.png" />
+        <img src="images/04.png" />
+    </div>
     <div class="line" style="font-family: 华文行楷;font-size:30px">
+        <a href=" HTMLPage4.html">质疑坤坤</a>
         <a href=" HTMLPage1.html">理解坤坤</a>
         <a href=" HTMLPage2.html">成为坤坤</a>
         <a href=" HTMLPage3.html">超越坤坤</a>
     </div>
-    
+    <audio id="audio" src="sound/kunjiao.mp3"></audio>
+    <script>
+        function playSound() {
+            var audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.load;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        window.onclick = function () {
+            playSound();
+        }
+    </script>
+    <audio autoplay="autoplay"
+           preload="auto"
+           src="sound/kunjiao.mp3">
+    </audio>
+
 
 </body>
 </html>
