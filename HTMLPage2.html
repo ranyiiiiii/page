@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <style>
     .center {
         text-align: center;
@@ -7,44 +7,68 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8" />
-    <title>坤坤之家</title>
+    <title>成为坤坤</title>
 </head>
 <body background="images/kuntai.jpg"
       style="background-repeat:no-repeat;
                background-attachment:fixed;
                background-size:100% 100%; ">
-    <h1 class="center" style=" font-family: 华文行楷;">坤流,永不消逝！</h1>
     <style>
-        .image {
+        .video {
             display: flex;
             justify-content: space-around;
-            margin: 80px;
-            margin-bottom:0;
-            height: 600px;
-            width: 90%;
-        }
-        .image img{
-            width:30%;
-        }
-        .line {
-            display: flex;
-            margin-left:80px;
-            margin-right:80px;
-            justify-content: space-around;
-            width: 90%;
+            margin: 50px;
+            width: 1000px;
+            height: 300px;
         }
     </style>
-    <div class="image">
-        <img src="images/flower.jpg"  />
-        <img src="images/flower.jpg"  />
-        <img src="images/flower.jpg"  />
+    <div style="float:right">
+        <a href="index.html">
+            <img src="images/ikun.jpg" width="60" height="60" margin-bottom="0" />
+            <p style="margin-top:0">返回主页</p>
+        </a>
     </div>
-    <div class="line" style="font-family: 华文行楷;font-size:30px">
-        <p>理解坤坤</p>
-        <p>成为坤坤</p>
-        <p>超越坤坤</p>
+    <div style="float:right;margin:100px">
+        <p>"ikun"们对坤坤的模仿也成为了一股新的潮流，似乎成为坤坤已经是一种荣誉。</p>
     </div>
-    
+    <div class="video" >
+        <div style="">
+            <iframe src="http://player.bilibili.com/player.html?aid=990229258&bvid=BV1Mx4y137fa&cid=963687235&p=1&autoplay=0" width="400" height="250" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div>
+            <iframe src="http://player.bilibili.com/player.html?aid=728021093&bvid=BV1nS4y1n7dQ&cid=761662266&p=1&autoplay=0" width="400" height="250" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="video" style="margin-top:0">
+        <div >
+            <iframe src="http://player.bilibili.com/player.html?aid=513937568&bvid=BV18g41117HB&cid=789006363&p=1&autoplay=0" width="400" height="250" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div>
+            <iframe src="http://player.bilibili.com/player.html?aid=300797957&bvid=BV1Uf4y1d7GC&cid=771795240&p=1&autoplay=0" width="400" height="250" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div></div>
+    </div>
+    <audio id="audio" src="sound/kunjiao.mp3"></audio>
+    <script>
+        function playSound() {
+            var audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.load;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        window.onclick = function () {
+            playSound();
+        }
+    </script>
+    <audio autoplay="autoplay"
+           preload="auto"
+           src="sound/kunjiao.mp3">
+    </audio>
 
 </body>
 </html>
