@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>质疑坤坤</title>
+</head>
+<body background="../images/kuntai.jpg"
+      style="background-repeat:no-repeat;
+               background-attachment:fixed;
+               background-size:100% 100%; ">
+    <div style="float:right">
+        <a href="index.html">
+            <img src="../images/ikun.jpg" width="60" height="60" margin-bottom="0" />
+            <p style="margin-top:0">返回主页</p>
+        </a>
+    </div>
+    <div class="center">
+        <video src="../images/kunjump.mp4" height="500" width="700" controls="controls" poster="../images/05.png"></video>
+    </div>
+    <div class="center">
+        <p>2019年年初，一段视频在网络上爆火。面对某流量明星，人们戏谑地将其唱跳称作“鸡你太美”。一场持续多年的嘲讽与针对拉开帷幕。</p>
+    </div>
+    <audio id="audio" src="../sound/kunjiao.mp3"></audio>
+    <script>
+        function playSound() {
+            var audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.load;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        window.onclick = function () {
+            playSound();
+        }
+    </script>
+    <audio autoplay="autoplay"
+           preload="auto"
+           src="../sound/kunjiao.mp3">
+    </audio>
+
+</body>
+</html>
